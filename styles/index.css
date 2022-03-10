@@ -1,0 +1,164 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+nav{
+    margin: auto;
+    width: 80%;
+    background-color: transparent;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin: 15px;
+    color: white;
+    font-family: 'Roboto';
+}
+ul a{
+    text-decoration: none;
+}
+ul a:hover{
+    color: #0278DA;
+}
+
+#bkg_video{
+    
+    position: fixed; 
+	right: 0; 
+    top: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover; 
+    
+}
+#bkg_video iframe{
+
+    width: 100%;
+    height: 1080px;
+}
+
+.conteiner_softexpert_suite_se{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    margin-top: 1200px;
+    height: 240px;
+    max-width: 1600px;
+}
+.conteiner_softexpert_suite_se #conteiner_softexpert_suite_box{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+.conteiner_softexpert_suite_se #conteiner_softexpert_suite_box:hover{
+    box-shadow: 0 0 14px #363636;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #363636;
+    color: gold;
+}
+.conteiner_softexpert_suite_se #conteiner_softexpert_suite_box img{
+    margin-top: 70px;
+    width: 15%;
+    line-height: 240px;
+}
+
+.software_solutions_for_complianceand_process_excellence{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1802px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+
+}
+.software_solutions_for_complianceand_process_excellence #title{
+    font-size: 35px;
+    width: 600px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    color: #333c4e;
+}
+.software_solutions_for_complianceand_process_excellence #find_the_best_solution{
+    font-size: 22px;
+    text-align: center;
+    color: #0076db;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 80em){
+
+
+    #bkg_video iframe{
+        margin-left: -50%;
+       width: 200%;
+       height: 60%;
+       background-repeat: repeat;
+        
+    }
+
+
+    .conteiner_softexpert_suite_se{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        background-color: whitesmoke;
+        border-radius: 0px;
+        margin-top: 480px;
+        margin-bottom: 750px;
+        height: 240px;
+        max-width: 1600px;
+    }   
+    .conteiner_softexpert_suite_se #conteiner_softexpert_suite_box{
+    background-color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    transition: 0.5s;
+    font-weight: 500;
+    }
+
+    .software_solutions_for_complianceand_process_excellence{
+        display: block;
+        margin: auto;
+        margin-top: -30px;
+        max-width: 100%;
+        border-radius: 0;
+        background-color: whitesmoke;
+
+        margin-bottom: 500px;
+    }
+
+    .software_solutions_for_complianceand_process_excellence #title{
+        font-size: 26px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: #333c4e;
+    }
+
+    .software_solutions_for_complianceand_process_excellence #find_the_best_solution{
+        font-size: 18px;
+        text-align: center;
+        color: #0076db;
+        font-weight: 400;
+    }
+
+}
